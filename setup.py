@@ -10,7 +10,7 @@ from setuptools import setup, find_packages
 _TENSORFLOW_CPU = os.environ.get('TF_CPU', None)
 
 # TensorFlow package name and version
-_TENSORFLOW = 'tensorflow' if _TENSORFLOW_CPU is None else 'tensorflow-cpu'
+_TENSORFLOW = 'tensorflow-gpu' if _TENSORFLOW_CPU is None else 'tensorflow-cpu'
 _MIN_TENSORFLOW_VERSION = '2.2'
 _TENSORFLOW += f'>={_MIN_TENSORFLOW_VERSION}'
 
